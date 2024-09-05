@@ -1,0 +1,74 @@
+---
+title: Models and Views
+sidebar:
+  order: 9
+---
+
+## Models and Views
+
+In QML, there are several types available for creating models and views. These types allow you to represent and display data in different ways. Let's explore each type and their properties:
+
+1. **ListModel**: A type that provides a list-based model for organizing data. It has properties such as `count`, `get()`, `append()`, `insert()`, `remove()`, and `clear()`.
+
+Example usage of ListModel:
+
+```qml
+ListModel {
+    id: myModel
+    ListElement { name: "Item 1" }
+    ListElement { name: "Item 2" }
+    ListElement { name: "Item 3" }
+}
+```
+
+2. **ListView**: A type that provides a view for displaying data in a vertical list. It has properties such as `model`, `delegate`, `currentIndex`, `highlight`, `orientation`, and `spacing`.
+
+Example usage of ListView:
+
+```qml
+ListView {
+    model: myModel
+    delegate: Text { text: model.name }
+}
+```
+
+3. **GridView**: A type that provides a view for displaying data in a grid layout. It has properties such as `model`, `delegate`, `cellWidth`, `cellHeight`, `flow`, `spacing`, and `highlight`.
+
+Example usage of GridView:
+
+```qml
+GridView {
+    model: myModel
+    delegate: Text { text: model.name }
+    cellWidth: 100
+    cellHeight: 100
+}
+```
+
+4. **Repeater**: A type that creates multiple instances of a delegate item. It has properties such as `model`, `delegate`, `count`, `index`, and `item`.
+
+Example usage of Repeater:
+
+```qml
+Repeater {
+    model: myModel.count
+    delegate: Text { text: myModel.get(index).name }
+}
+```
+
+5. **Delegate**: A type that represents an item to be displayed in a view. It has properties such as `width`, `height`, `text`, `color`, `font`, and `onClicked`.
+
+Example usage of Delegate:
+
+```qml
+Delegate {
+    width: 100
+    height: 50
+    text: "Hello World"
+    color: "red"
+    font.bold: true
+    onClicked: console.log("Clicked!")
+}
+```
+
+These are just a few examples of the types and properties available for creating models and views in QML. You can explore the QML documentation for more information on each type and their properties.

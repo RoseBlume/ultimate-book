@@ -15,15 +15,11 @@ export default defineConfig({
 				  items: [
 					{ label: "C",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "low-level/c/overview" },
-					  ]
+					  autogenerate: { directory: 'low-level/c' }
 					},
 					{ label: "C++",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "low-level/cpp/overview" },
-					  ]
+					  autogenerate: { directory: 'low-level/cpp' }
 					},
 					{ label: "Rust",
 						collapsed: true,
@@ -50,9 +46,16 @@ export default defineConfig({
 					},
 					{ label: "NASM",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "low-level/nasm/overview" },
-					  ]
+					  autogenerate: { directory: 'low-level/nasm' }
+					},
+					{ label: "FORTRAN",
+					  collapsed: true,
+					  autogenerate: { directory: 'low-level/fortran' }
+					},
+					{ 
+					  label: "Pascal",
+					  collapsed: true,
+					  autogenerate: { directory: 'low-level/pascal' }
 					}
 				]
 				},
@@ -61,81 +64,35 @@ export default defineConfig({
 				  items: [
 					{ label: "Python",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/python/overview" },
-					  ]
+					  autogenerate: { directory: 'high-level/python' }
 					},
 					{ label: "QML",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/qml/overview" },
-					  ]
+					  autogenerate: { directory: 'high-level/qml' }
 					},
 					{ label: "Java",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/java/overview" },
-					  ]
+					  autogenerate: { directory: 'high-level/java' }
 					},
 					{ label: "C#",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/csharp/overview" },
-					  ]
-					},
-					{ label: "Kotlin",
-					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/kotlin/overview" },
-					  ]
+					  autogenerate: { directory: 'high-level/csharp' }
 					},
 					{ label: "TypeScript",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/typescript/overview" },
-					  ]
+					  autogenerate: { directory: 'high-level/typescript' }
 					},
 					{ label: "R",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/r/overview" },
-					  ]
+					  autogenerate: { directory: '/high-level/r' }
 					},
 					{ label: "PHP",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/php/overview" },
-					  ]
+					  autogenerate: { directory: 'high-level/php' }
 					},
 					{ label: "SQL",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/sql/overview" },
-					  ]
-					},
-					{ label: "Ruby",
-					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/ruby/overview" },
-					  ]
-					},
-					{ label: "Cryptol",
-					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/cryptol/overview" },
-					  ]
-					},
-					{ label: "Go",
-					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/go/overview" },
-					  ]
-					},
-					{ label: "Perl",
-					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "high-level/perl/overview" },
-					  ]
+					  autogenerate: { directory: 'high-level/sql' }
 					},
 					{
 						label: "HTML",
@@ -232,39 +189,27 @@ export default defineConfig({
 				  items: [
 					{ label: "CMake",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "build-systems/cmake/overview" },
-					  ]
+					  autogenerate: { directory: 'build-systems/cmake' }
 					},
 					{ label: "Meson",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "build-systems/meson/overview" },
-					  ]
+					  autogenerate: { directory: 'build-systems/meson' }
 					},
 					{ label: "Cargo",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "build-systems/cargo/overview" },
-					  ]
+					  autogenerate: { directory: 'build-systems/cargo' }
 					},
 					{ label: "QMake",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "build-systems/qmake/overview" },
-					  ]
+					  autogenerate: { directory: 'build-systems/qmake' }
 					},
 					{ label: "Autoconf",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "build-systems/autoconf/overview" },
-					  ]
+					  autogenerate: { directory: 'build-systems/autoconf' }
 					},
 					{ label: "Justfile",
 					  collapsed: true,
-					  items: [
-						{ label: "Basics", slug: "build-systems/justfile/overview" },
-					  ]
+					  autogenerate: { directory: 'build-systems/justfile' }
 					}
 				]
 				}
