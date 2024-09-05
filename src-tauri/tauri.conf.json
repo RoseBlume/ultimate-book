@@ -1,6 +1,6 @@
 {
-  "productName": "Tauri-Book",
-  "version": "1.0.1-beta",
+  "productName": "Ultimate-Code-Book",
+  "version": "1.0.0-beta",
   "identifier": "io.github.roseblume.rosary",
   "build": {
     "beforeDevCommand": "pnpm run dev",
@@ -10,7 +10,7 @@
   },
   "app": {"windows": [
       {
-        "title": "Tauri Book",
+        "title": "Ultimate Code Book",
         "label": "main",
         "maximized": true
       }
